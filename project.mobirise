@@ -1,0 +1,163 @@
+{
+  "settings": {
+    "name": "westfalia kayıt aşamaları",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise5",
+      "title": "Mobirise 5",
+      "styling": {
+        "primaryColor": "#6592e6",
+        "secondaryColor": "#ff6666",
+        "successColor": "#40b0bf",
+        "infoColor": "#47b5ed",
+        "warningColor": "#FFE161",
+        "dangerColor": "#ff9966",
+        "mainFont": "Jost",
+        "display1Font": "Jost",
+        "display1Size": 4.6,
+        "display2Font": "Jost",
+        "display2Size": 3,
+        "display5Font": "Jost",
+        "display5Size": 2,
+        "display7Font": "Jost",
+        "display7Size": 1.2,
+        "display4Font": "Jost",
+        "display4Size": 1.1,
+        "isRoundedButtons": false,
+        "isGhostButtonBorder": false,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.6.11",
+    "siteFonts": [],
+    "chatbutton": {},
+    "favicon": false,
+    "mbrsiteDomain": "venj7jmrbv",
+    "imageResize": false,
+    "cssOptimize": false,
+    "lazyLoad": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "pwa-switcher": false,
+    "uniqCompNum": 8,
+    "versionPublish": "5.6.11"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_name": "progress-bars04",
+          "_sourceTheme": "photom4",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"progress-bars04 photom4_progress-bars04 circle-progress-section\" group=\"Progress\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"as-pie-progress\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"color\" title=\"Progress Color\" name=\"progressColor\" value=\"#4479d9\">\n        <input type=\"checkbox\" title=\"Gradient Progress\" name=\"gradientProgress\">\n        <input type=\"color\" title=\"Progress Color 2\" name=\"progressColor2\" value=\"#149dcc\" condition=\"gradientProgress\">\n        <select title=\"Progress count\" name=\"progressCount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected>4</option>\n        </select>\n        <input type=\"range\" inline title=\"Progress 1\" name=\"progress1\" min=\"0\" max=\"100\" step=\"1\" value=\"25\">\n        <input type=\"range\" inline title=\"Progress 2\" name=\"progress2\" min=\"0\" max=\"100\" step=\"1\" value=\"50\" condition=\"progressCount>1\">\n        <input type=\"range\" inline title=\"Progress 3\" name=\"progress3\" min=\"0\" max=\"100\" step=\"1\" value=\"75\" condition=\"progressCount>2\">\n        <input type=\"range\" inline title=\"Progress 4\" name=\"progress4\" min=\"0\" max=\"100\" step=\"1\" value=\"100\" condition=\"progressCount>3\">\n        <input type=\"range\" inline title=\"Progress 5\" name=\"progress5\" min=\"0\" max=\"100\" step=\"1\" value=\"100\" condition=\"progressCount>4\">\n        <input type=\"range\" inline title=\"Progress 6\" name=\"progress6\" min=\"0\" max=\"100\" step=\"1\" value=\"100\" condition=\"progressCount>5\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@ADDONS_PATH@/photom4/components/_images/background2.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <svg mbr-if=\"gradientProgress\" class=\"svg-gradient\">\n        <linearGradient>\n            <stop offset=\"0%\" stop-color=\"{{progressColor2}}\"></stop>\n            <stop offset=\"100%\" stop-color=\"{{progressColor}}\"></stop>\n        </linearGradient>\n    </svg>\n\n    <div class=\"container\">\n        <h2 class=\"mbr-section-title align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Wie melde ich mich zu Prüfungen an?</b></h2>\n\n        <h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla\n            metus metus, ornare sit amet dictum in, fringilla eget eros. Nunc in neque ex. Curabitur tempor turpis\n            ligula, sed suscipit ex pretium nec. Nullam posuere diam arcu. Cras congue posuere ligula, ut placerat mi\n            elementum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>\n\n        <div class=\"media-container-row pt-5 mt-2\">\n            <div class=\"card p-3 align-center\">\n                <div class=\"wrap\">\n                    <div class=\"pie_progress progress1\" role=\"progressbar\" data-goal=\"{{progress1}}\">\n                        <p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".pie_progress__number\"></p>\n                    </div>\n                </div>\n                <div class=\"mbr-crt-title pt-3\">\n                    <h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">\n                        Aufnahmetest / Zeugnis</h4>\n                </div>\n                <div class=\"mbr-crt-text pt-2\">\n                    <p class=\"mbr-fonts-style card-text\" data-app-selector=\".card-text\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                        Lorem ipsum dolor sit amet, consectetur adipisicing.\n                    </p>\n                </div>\n            </div>\n\n            <div class=\"card p-3 align-center\" mbr-if=\"progressCount>1\">\n                <div class=\"wrap\">\n                    <div class=\"pie_progress progress2\" role=\"progressbar\" data-goal=\"{{progress2}}\">\n                        <p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".pie_progress__number\">73%</p>\n                    </div>\n                </div>\n                <div class=\"mbr-crt-title pt-3\">\n                    <h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">Prüfung <br>auswählen</h4>\n                </div>\n                <div class=\"mbr-crt-text pt-2\">\n                    <p class=\"mbr-fonts-style card-text\" data-app-selector=\".card-text\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                        Lorem ipsum dolor sit amet, consectetur adipisicing.\n                    </p>\n                </div>\n            </div>\n\n            <div class=\"card p-3 align-center\" mbr-if=\"progressCount>2\">\n                <div class=\"wrap\">\n                    <div class=\"pie_progress progress3\" role=\"progressbar\" data-goal=\"{{progress3}}\">\n                        <p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".pie_progress__number\"></p>\n                    </div>\n                </div>\n                <div class=\"mbr-crt-title pt-3\">\n                    <h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">Unterlagen bekommen</h4>\n                </div>\n                <div class=\"mbr-crt-text pt-2\">\n                    <p class=\"mbr-fonts-style card-text\" data-app-selector=\".card-text\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                        Lorem ipsum dolor sit amet, consectetur adipisicing.\n                    </p>\n                </div>\n            </div>\n\n            <div class=\"card p-3 align-center\" mbr-if=\"progressCount>3\">\n                <div class=\"wrap\">\n                    <div class=\"pie_progress progress4\" role=\"progressbar\" data-goal=\"{{progress4}}\">\n                        <p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".pie_progress__number\"></p>\n                    </div>\n                </div>\n                <div class=\"mbr-crt-title pt-3\">\n                    <h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">an Prüfung teilnehmen</h4>\n                </div>\n                <div class=\"mbr-crt-text pt-2\">\n                    <p class=\"mbr-fonts-style card-text\" data-app-selector=\".card-text\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                        Lorem ipsum dolor sit amet, consectetur adipisicing.\n                    </p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            "h3": {
+              "text-align": "center"
+            },
+            "h2": {
+              "&:before": {
+                "position": "absolute",
+                "content": "\"\"",
+                "left": "-60px",
+                "top": "0",
+                "margin": "auto",
+                "bottom": "0",
+                "width": "40px",
+                "height": "1px",
+                "background": "currentColor"
+              },
+              "&:after": {
+                "position": "absolute",
+                "content": "\"\"",
+                "right": "-60px",
+                "top": "0",
+                "margin": "auto",
+                "bottom": "0",
+                "width": "40px",
+                "height": "1px",
+                "background": "currentColor"
+              },
+              "width": "fit-content",
+              "position": "relative",
+              "margin": "auto",
+              "margin-bottom": "1.4rem",
+              "letter-spacing": "4px"
+            },
+            ".wrap": {
+              "width": "150px",
+              "height": "150px",
+              "margin": "0 auto"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            },
+            ".pie_progress__number": {
+              "text-align": "center !important"
+            },
+            ".card-title": {
+              "margin-bottom": "0"
+            },
+            ".card": {
+              "-webkit-flex-basis": "100%",
+              "flex-basis": "100%",
+              "word-wrap": "break-word"
+            },
+            ".svg-gradient": {
+              "position": "absolute"
+            },
+            "ellipse": {
+              "stroke": "rgba(206, 206, 206, 0.4)"
+            },
+            "path": {
+              "& when not (@gradientProgress)": {
+                "stroke": "@progressColor"
+              }
+            },
+            "@media (max-width: 991px) and (min-width: 768px)": {
+              ".card": {
+                "-webkit-flex-basis": "50%",
+                "flex-basis": "50%"
+              }
+            },
+            "@media (max-width: 768px)": {
+              "h2": {
+                "&:before, &:after": {
+                  "display": "none"
+                }
+              }
+            }
+          },
+          "_cid": "tqZ4kMKHqw",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "progress-bars04-7"
+        }
+      ]
+    }
+  }
+}
